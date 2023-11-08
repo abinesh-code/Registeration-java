@@ -15,7 +15,8 @@ To run this project, you need to have the following software installed on your m
 - Integrated Development Environment (IDE) (e.g., IntelliJ IDEA, Eclipse, Vscode)
 - Apache Maven
 - Google app password
-- Default username and password for admin => username ->`admin` , password -> `admin123` you can modify on `register/src/main/java/com/example/register/admin/AdminController.java`  
+- Default username and password for admin => username ->`admin` , password -> `admin123` you can modify on `register/src/main/java/com/example/register/admin/AdminController.java`
+- Default generating .war file name is `training.war` you can modify at line 94 on `register/pom.xml` `<finalName> enter-custom-war-file-name</finalName>`
 
 ### Installation
 
