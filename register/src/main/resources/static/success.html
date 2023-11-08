@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success Page</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            font-weight: bolder;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        
+        th, td {
+            letter-spacing: 1px;
+            padding: 15px; 
+            text-align: left;
+            border: 1px solid #ccc; 
+        }
+        
+        th {
+            font-family: Arial, Helvetica, sans-serif;      
+            font-size: large;
+            font-weight: bold;
+            background-color: #3b973e;
+            color: #fff;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #cccaca;
+        }
+    </style>
+</head>
+<body>
+    <h1 >User Details</h1>
+    <table >
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Whatsapp Number</th>
+                <th>Address</th>
+                <th>District</th>
+                <th>Email</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+                 <tr th:each="userDetails : ${users}">
+                <td th:text="${userDetails.id}"></td>
+                <td th:text="${userDetails.name}"></td>
+                <td th:text="${userDetails.gender}"></td>
+                <td th:text="${userDetails.whatsappNumber}"></td>
+                <td th:text="${userDetails.address}"></td>
+                <td th:text="${userDetails.district}"></td>
+                <td th:text="${userDetails.email}"></td>
+                <td th:text="${userDetails.state}"></td>  
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

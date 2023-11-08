@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: db-username
+    password: db-password
+    url: jdbc:mariadb://localhost:3306/database-name
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+    encoding: UTF-8
+    cache: false
+    mode: HTML
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+

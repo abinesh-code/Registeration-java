@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thank You</title>
+        <style>
+            body {
+                font-family: "PT Sans", sans-serif;
+                font-size: 16px;
+                line-height: 1.428571429;
+                font-weight: 400;
+                color: #fff;
+                background-color: #0f144c;
+            }
+
+            .section {
+                position: relative;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            header {
+                text-align: center;
+                padding: 20px;
+            }
+
+            header > h3 {
+                font-size: 44px;
+                font-weight: 700;
+                margin-bottom: 8px;
+            }
+
+            header > h4 {
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 1px;
+            }
+
+            main {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+            }
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                margin-top: 10px;
+                background-color: transparent;
+                border: 1px solid #0288d1;
+                color: #ffffff;
+                text-decoration: none;
+                border-radius: 1rem;
+                transition: background-color 0.3s;
+                align-self: center;
+                padding: 0.6rem 1.5rem;
+            }
+
+            a:hover {
+                background-color: #0288d1;
+                color: #c6c6c6;
+            }
+            a:hover img {
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+
+            .telegram-logo {
+                height: 50px;
+                margin-right: 10px;
+                /* Add margin to separate the logo from text */
+            }
+
+            .footer {
+                width: 100%;
+                background-color: #0a045ea8;
+                padding: 16px;
+                align-self: center;
+                text-align: center;
+                margin-top: 32px;
+            }
+
+            .footer a {
+                color: #fff;
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            .footer a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="section">
+            <header>
+                <h3>Thanks for Registering!</h3>
+                <h4>
+                    For Training, click the link below to join our Telegram
+                    group:
+                </h4>
+            </header>
+            <main>
+                <a href="https://t.me/your-telegram-group" target="_blank">
+                    <img
+                        src="https://ik.imagekit.io/tealcdn2023/Logo/image.png?updatedAt=1698644005450"
+                        alt="Telegram Logo"
+                        class="telegram-logo"
+                    />
+                    Join Telegram Group
+                </a>
+            </main>
+        </div>
+        <div class="wave"></div>
+    </body>
+</html>
