@@ -1,4 +1,4 @@
-# Registeration-java
+# Registration-java
 
 This is a simple Spring Boot application that allows users to register and log in. Registered user details are stored in a MySQL database. An admin can log in to view registered user details via email.
 
@@ -23,7 +23,7 @@ To run this project, you need to have the following software installed on your m
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/abinesh-code/Rejisteration-java.git
+   git clone https://github.com/abinesh-code/Rejistration-java.git
    ```
 2. Configure your database credentials on ```register/src/main/resource/application.yml```
 3. Create a Google-app password by https://myaccount.google.com -> Security -> Two factor authentication (turn on) -> (scroll down) App passwords. Generate new app password and copy
